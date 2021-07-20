@@ -2,7 +2,7 @@
 
 ##Instructions
 
-- for and clone this repo
+- fork and clone this repo
 - mockup the html and css shown in the pdf
 - feel free to change out the colors
 - replace the text of "logo" to an actual logo, your choice
