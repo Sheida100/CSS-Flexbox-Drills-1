@@ -57,5 +57,165 @@ main {
   flex-direction: row;
   /* align-items: center; */
   flex-wrap: wrap;
-  background-color: red;
+  background-color: yellow;
+  position: relative;
+  margin: 30px 0;
+}
+
+#logo4 {
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
+.a1 {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+}
+.a3 {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+}
+.a2 {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+}
+
+.a4 {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.card1 {
+  margin: 12px;
+  height: 18rem;
+  width: 18rem;
+  border: 3px solid pink;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "a b"
+    "c b"
+    "d b";
+}
+#grideitem1,
+#grideitem3,
+#grideitem5 {
+  background: rgb(212, 208, 208);
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+}
+
+#grideitem2,
+#grideitem4,
+#grideitem6 {
+  background: aqua;
+
+  grid-area: b;
+}
+
+.card2 {
+  margin: 12px;
+  height: 18rem;
+  width: 18rem;
+  border: 3px solid pink;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-gap: 5px;
+  grid-template-areas:
+    "a a a a a a"
+    "b c d e f g";
+}
+
+#grideitemcard2 {
+  background: pink;
+  grid-area: a;
+}
+
+#gride2 {
+  background: gray;
+  grid-area: b;
+  /* height: 60px;
+  width: 60px;
+  margin: 5px; */
+}
+
+#gride3 {
+  background: gray;
+  grid-area: c;
+  /* height: 60px;
+  width: 60px;
+  margin: 5px; */
+}
+#gride4 {
+  background: gray;
+  grid-area: d;
+  /* height: 60px;
+  width: 60px;
+  margin: 5px; */
+}
+#gride5 {
+  background: gray;
+  grid-area: e;
+  /* height: 60px;
+  width: 60px;
+  margin: 5px; */
+}
+#gride6 {
+  background: gray;
+  grid-area: f;
+  /* height: 60px;
+  width: 60px;
+  margin: 5px; */
+}
+#gride7 {
+  background: gray;
+  grid-area: g;
+  /* height: 60px;
+  width: 60px;
+  margin: 5px; */
+}
+
+#cards {
+  display: flex;
+}
+
+.card3 {
+  margin: 12px;
+  height: 18rem;
+  width: 18rem;
+  border: 3px solid pink;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-areas:
+    "a"
+    "b";
+}
+
+.circle-parent {
+  display: grid;
+  place-content: center;
+  grid-area: a;
+  background: rgb(221, 218, 218);
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(93, 92, 97);
+  border-radius: 50%;
+}
+.p3g3 {
+  grid-area: b;
+  background: aqua;
 }
